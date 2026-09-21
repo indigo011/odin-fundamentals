@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* main */
+  --dark-bg-clr: #1f2937;
+  --call-to-action-clr: #3882f6;
+
+  /* logo */
+  --logo-font-size: 24px;
+  --logo-clr: #f9faf8;
+
+  /* hero main text */
+  --hero-main-font-size: 48px;
+  --hero-main-clr: #f9faf8;
+  --hero-main-weight: 900;
+
+  /* hero secondary text*/
+  --hero-secondary-font-size: 18px;
+  --hero-secondary-clr: #e5e7eb;
+
+  /* information heading */
+  --information-clr: #1f2937;
+  --information-font-size: 36px;
+  --information-font-weight: 900;
+
+  /* quote */
+  --quote-bg-clr: #e5e7eb;
+  --quote-clr: #1f2937;
+  --quote-font-size: 35px;
+  --quote-weight: 300;
+  --quote-font-style: italic;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  background-color: var(--call-to-action-clr);
+  color: var(--hero-main-clr);
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #21498b;
+  transition: all 100ms linear;
+}
+
+button:active {
+  background-color: var(--dark-bg-clr);
+  color: var(--call-to-action-clr);
+}
+
+a {
+  color: var(--hero-secondary-clr);
+  transition: all 200ms linear;
+}
+
+a:hover {
+  color: var(--call-to-action-clr);
+  font-weight: 600;
+}
+
+/* hero section */
+.hero-section {
+  background-color: var(--dark-bg-clr);
+  min-height: 50dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section header,
+.hero-main-ctnr {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+.hero-logo {
+  font-size: var(--logo-font-size);
+  color: var(--logo-clr);
+  flex-grow: 1;
+  font-weight: bolder;
+}
+
+.hero-links {
+  display: flex;
+  list-style: none;
+  color: var(--hero-secondary-clr);
+  font-size: var(--hero-secondary-font-size);
+  min-width: max-content;
+  gap: 10px;
+}
+
+.hero-links ul {
+  max-width: fit-content;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--hero-main-font-size);
+  color: var(--hero-main-clr);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.hero-text p {
+  color: var(--hero-secondary-clr);
+  font-size: var(--hero-secondary-font-size);
+}
+
+.hero-btn {
+  align-self: start;
+}
+
+.hero-picture {
+  background-color: var(--hero-secondary-clr);
+  flex-grow: 1;
+  text-align: center;
+}
+
+.hero-picture img {
+  object-fit: cover;
+}
+
+/* INFORMATION SECTION */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.info-title {
+  font-size: var(--information-font-size);
+  color: var(--information-clr);
+  font-weight: var(--information-font-weight);
+}
+
+.cards-ctnr {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.card {
+  max-width: 100px;
+  text-align: center;
+  color: var(--quote-clr);
+  font-size: 10px;
+}
+
+.card picture {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--call-to-action-clr);
+  border-radius: 10px;
+  flex-shrink: 0;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* QUOTE SECTION */
+.quote-section {
+  background-color: var(--quote-bg-clr);
+  color: var(--quote-clr);
+  font-style: var(--quote-font-style);
+  font-weight: var(--quote-weight);
+  font-size: var(--quote-font-size);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.quote-section p {
+  width: 50%;
+}
+
+.quote-owner {
+  font-weight: 600;
+  font-size: var(--hero-secondary-font-size);
+  text-align: end;
+}
+
+/* CALL TO ACTION SECTION */
+.signup-section {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--call-to-action-clr);
+  color: white;
+  width: 70%;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.signup-btn {
+  border: 2px solid white;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: var(--dark-bg-clr);
+  min-height: 10vh;
+  color: var(--hero-secondary-clr);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
